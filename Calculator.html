@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator by faisal</title>
+<style>
+#div1{
+        border: solid coral;
+        background-color: rgb(197, 192, 170);
+        padding: 20px;
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+    #display{
+        border: solid rgb(90, 180, 78);
+        background-color: rgb(247, 99, 168);
+        padding: 20px;
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+</style>
+<script>
+    function fn1()
+    {
+        var a=document.getElementById("txt1").value;
+        var b=document.getElementById("txt2").value;
+       var a1=parseFloat(a);
+       var b1=parseFloat(b);
+        var c=a1+b1;
+
+        var d=document.getElementById("txt3");
+         d.value=c;
+    }
+
+
+    function fn2()
+    {
+        var a=document.getElementById("txt1").value;
+        var b=document.getElementById("txt2").value;
+       var a1=parseFloat(a);
+       var b1=parseFloat(b);
+        var c=a1-b1;
+
+        var d=document.getElementById("txt3");
+         d.value=c;
+    }
+
+
+
+    function fn3()
+    {
+        var a=document.getElementById("txt1").value;
+        var b=document.getElementById("txt2").value;
+       var a1=parseFloat(a);
+       var b1=parseFloat(b);
+        var c=a1*b1;
+
+        var d=document.getElementById("txt3");
+         d.value=c;
+    }
+
+
+
+    function fn4()
+    {
+        var a=document.getElementById("txt1").value;
+        var b=document.getElementById("txt2").value;
+       var a1=parseFloat(a);
+       var b1=parseFloat(b);
+        var c=a1/b1;
+
+        var d=document.getElementById("txt3");
+         d.value=c;
+    }
+
+
+</script>
+</head>
+<body>
+    <div id="div1">
+        <p id=date></p>
+        <script>
+            var d=new Date();
+            document.getElementById('date').innerHTML=d;
+        </script>
+<h3>A small calculator by Faisal</h3>
+First Number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <input type="text" id="txt1"><br>
+Second Number &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="txt2"><br><br>
+
+<input type="button" value="add" onclick="fn1()">
+<input type="button" value="subtract" onclick="fn2()">
+<input type="button" value="Multiply" onclick="fn3()">
+<input type="button" value="Divide" onclick="fn4()">
+<br><br><br>
+<div id="display">Result&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="txt3">
+    <br><br>
+    </div> </div>
+</body>
+</html>
